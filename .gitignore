@@ -1,0 +1,4 @@
+# Cypress Artifacts
+app/cypress/screenshots/
+app/cypress/videos/
+app/cypress/fixtures/

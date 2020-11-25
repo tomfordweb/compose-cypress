@@ -1,0 +1,17 @@
+version: '3.2'
+
+# run Cypress tests and exit with command
+#   docker-compose up --exit-code-from cypress
+services:
+
+  # Cypress container
+  cypress:
+    # the Docker image to use from https://github.com/cypress-io/cypress-docker-images
+    image: "cypress/included:4.0.2"
+    environment:
+      # pass base url to test pointing at the web application
+      - CYPRESS_baseUrl=http://books.toscrape.com
+    # share the current folder as volume to avoid copying
+    working_dir: /e2e
+    volumes:
+      - ./app:/e2e
