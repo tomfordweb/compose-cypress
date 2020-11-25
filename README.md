@@ -3,8 +3,8 @@
 docker-compose up --exit-code-from=cypress
 ```
 
-# Future
+# Reading
 
-https://github.com/bahmutov/cypress-open-from-docker-compose
-
-There are notes here on how to run cypress GUI locally with xQuartz on mac.
+* https://www.cypress.io/blog/2019/05/02/run-cypress-with-a-single-docker-command/
+* https://stackoverflow.com/questions/59514234/viewing-the-interactive-cypress-test-runner-in-docker-on-linux
+* https://github.com/bahmutov/cypress-open-from-docker-compose
